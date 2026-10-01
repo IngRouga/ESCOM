@@ -1,0 +1,22 @@
+ESCOM NIGER – SITE WEB (HTML / CSS / JS)
+=========================================
+
+Structure (un seul sous-dossier) :
+  *.html            toutes les pages du site (à la racine)
+  assets/           style.css, main.js, polices, logo et photos
+  sitemap.xml, robots.txt, favicon.ico, icon.png, apple-icon.png, og-image.jpg
+
+Mise en ligne (GitHub + Cloudflare Pages) :
+  1. Envoyer TOUS les fichiers de la racine + le dossier assets/ sur le dépôt GitHub.
+  2. Cloudflare Pages : Framework preset = None, Build command = (vide), Output directory = /
+  3. Vérifier ensuite que le dossier assets/ est bien présent sur GitHub (18 fichiers).
+
+Modifier le contenu :
+  - Textes : directement dans les fichiers .html
+  - Couleurs et mise en page : assets/style.css (variables en haut du fichier)
+  - Numéro WhatsApp des formulaires : assets/main.js (ligne WHATSAPP)
+  - Adresse du site pour le SEO : remplacer "https://escom-niger.pages.dev"
+    dans les .html, sitemap.xml et robots.txt si le site a un autre domaine.
+
+Formulaires : la préinscription et le contact sont vérifiés dans le navigateur,
+puis envoyés via WhatsApp (message pré-rempli) ou par email.

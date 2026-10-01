@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /espace-admin
+Disallow: /espace-etudiant
+
+Sitemap: https://escom-niger.pages.dev/sitemap.xml
