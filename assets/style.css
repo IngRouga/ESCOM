@@ -634,3 +634,35 @@ a.contact-item:hover strong { color: var(--blue); }
   .header-cta { padding: .7rem 1.25rem; font-size: .875rem; }
   .wa-float { right: 28px; bottom: 28px; }
 }
+
+/* ==========================================================================
+   16. Digital Campus (accès à l'espace en ligne des étudiants)
+   ========================================================================== */
+.header-campus { display: none; padding: .6rem 1rem; font-size: .82rem; }
+.header-campus .icon-sm { width: .95rem; height: .95rem; }
+.header-campus:hover .icon-sm { transform: none; }
+.campus-long { display: none; }
+@media (min-width: 560px) { .header-campus { display: inline-flex; } }
+@media (min-width: 900px) { .campus-long { display: inline; } .campus-short { display: none; } }
+.header-actions .btn { white-space: nowrap; }
+/* Avec le menu complet (≥1280px), libellé court pour garder la navigation sur une ligne */
+@media (min-width: 1280px) {
+  .header > .container { max-width: 1320px; }
+  .nav a { padding: .5rem .6rem; white-space: nowrap; }
+  .nav a::after { left: .6rem; right: .6rem; }
+  .campus-long { display: none; } .campus-short { display: inline; }
+}
+.mobile-menu-bottom .btn-white .icon-sm { color: var(--navy); }
+
+.campus-strip { padding: 8px 0 48px; background: #fff; }
+.campus-card { display: grid; gap: 1.25rem; align-items: center; padding: 1.5rem; border-radius: 24px; border: 1px solid var(--line); background: var(--mist); }
+.campus-ico { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 16px; background: var(--navy); color: #fff; }
+.campus-ico .icon { width: 1.5rem; height: 1.5rem; }
+.campus-text .kicker { margin-bottom: .35rem; }
+.campus-text h2 { font-size: 1.35rem; }
+.campus-text p:last-child { margin-top: .35rem; color: var(--slate); }
+.campus-cta { justify-self: stretch; }
+@media (min-width: 768px) {
+  .campus-card { grid-template-columns: auto 1fr auto; padding: 1.75rem 2rem; }
+  .campus-cta { justify-self: end; }
+}
